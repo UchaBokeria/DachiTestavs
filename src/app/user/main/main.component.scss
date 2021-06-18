@@ -1,0 +1,381 @@
+@import "src/assets/library/style.scss";
+
+.header{
+    transition: 1s;
+    @include flex();
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: $black;
+    color:white;
+    z-index: 10000000;
+    img{
+        width: auto;
+        height: 8vh;
+    }
+    .menu{
+        @include flex();
+        width:40%;
+        height: 8vh;
+        font-size:1.5vw;
+        p{cursor: pointer}
+    }
+}
+
+.home{
+    @include flex();
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 120vh;
+    .text{
+        background-image: url("https://immediac.blob.core.windows.net/bedfordhealthcentre/Updated%20Photos/PersonalTraining.jpg ");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        @include flex();
+        flex-direction: column;
+        justify-content:center ;
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        font-family: 'Brush Script MT', cursive;
+        color:white;
+
+        .triangle-right{
+            position: absolute;
+            right:0;
+            top:10vh;
+            border-top: 612px solid transparent;
+            border-right: 700px solid $orange;
+            opacity: 0.4;
+            z-index: 1;
+        }
+        .triangle-left{
+            position: absolute;
+            left:10%;
+            top:0;
+            border-bottom: 700px solid transparent;
+            border-left: 800px solid $orange;
+            opacity: 1;
+            z-index: 1;
+        }
+        .emptyBox{
+            background-color: $orange;
+            position: absolute;
+            left:0;
+            top:0;
+            height: inherit;
+            width: 10%;
+            z-index: 1;
+        }
+        .butt{
+            @include flex();
+            flex-direction: column;
+            width: 25%;
+            position: absolute;
+            top:20vh;
+            left:10%;
+            z-index: 10;
+            transition: 1s;
+            button{
+                @include button();
+                border:2px solid white;
+                border-radius:1px;
+                width: 60%;
+                color: white;
+            }
+            .home_button{
+                transition: 0.3s;
+            }
+            .home_button:hover{
+                background-color: white;
+                color:$orange;
+            }
+        }
+
+        
+    }
+    .boxes{
+        @include flex();
+        width: 100%;
+        height: 40vh;
+        z-index: 1;
+        position: relative;
+        h4{
+            top:-3vh;
+            background: -webkit-linear-gradient($orange 70%, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: absolute;
+            font-size: 3vw;
+            border-bottom:3px solid $orange;
+        }
+        .box{
+            @include flex();
+            width: 25%;
+            height: 25vh;
+            text-align: center;
+            position: relative;
+            margin-top: 15vh;
+            img{
+                width: 100%;
+                height: 25vh;
+            }
+            p{
+                top:25vh;
+                position: absolute;
+            }
+            h1{
+                position: absolute;
+                bottom:0;
+                color:white;
+                font-family: bold;
+            }
+        }
+    }
+
+}
+
+.schedule{
+    @include flex();
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 95vh;
+    background-color: $black;
+    margin-top:20vh;
+    h1{
+        background: -webkit-linear-gradient($orange 50%, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-bottom:2px solid $orange;
+    }
+    .tableContainer{
+        overflow: scroll;
+        background-color: green;
+        width: 80%;
+        height: 70vh;
+        overflow-x: hidden;
+        table {
+            width: 100%;
+            background-color: $orange;
+            border-collapse: collapse;
+            overflow: scroll;
+            position: relative;
+            color:white;
+        }
+        .tableDays{
+            th, td{
+                width: 10%;
+                position: relative;
+                height: 5vh;
+            }
+            img{
+                top:0;
+                left: 0;
+                width: 100%;
+                position: absolute;
+                height: 6.8vh;
+            }
+        }
+        .tableTimes{
+            td{
+                background-color: white;
+            }
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+        th{
+            background-color: $black;
+        }
+        .booked{
+            color: red;
+        }
+        .free{
+            color:green;
+        }
+    }
+
+}
+
+.pricing{
+    @include flex();
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+    color:$black;
+    margin-top: 10vh;
+    .text{
+        @include flex();
+        flex-direction: column;
+        width: 40%;
+        height: auto;
+        h1{            
+            background: -webkit-linear-gradient($orange 70%, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-bottom: 3px solid $orange;
+        }
+    }
+    .price-box{
+        @include flex();
+        width: 100%;
+        height: 75vh;
+        .price{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20%;
+            height: 65vh;
+            border:3px solid $orange;
+            border-radius: 4px;
+            p{font-size: 30px; color:$orange}
+            h2{font-size:20px;}
+        }
+        .price_button{
+            @include button();
+            width: 60%;
+            border-radius: 0;
+            border:1px solid white;
+            color:white;
+            height: 5vh;
+            transition: 0.3s;
+        }
+        .price_button:hover{
+            background-color: white;
+            border:1px solid $orange;
+            color:$orange;
+        }
+    }
+}
+
+.contanct{
+    @include flex();
+    margin-top:10vh;
+    width: 100%;
+    height: 60vh;
+    border-top: 3px solid $orange;
+    h1{color:white}
+    .contactForm{
+        @include flex();
+        flex-direction: column;
+        border: 3px solid $orange;
+        width: 45%;
+        height: 440px;
+        background-color: $black;
+        border-radius: 10px;
+        .contanctUser{
+            display: flex;
+            justify-content: space-between;
+            width: 73%;
+            height: 6vh;
+            input{
+                width: 45%;
+            }
+        }
+        input{
+            width: 70%;
+            height: 4vh;
+            border:3px solid $orange;
+            font-size: 1.1vw;
+            padding-left:2%;
+            border-radius: 5px;
+        }
+        textarea{
+            width: 70%;
+            padding-left:2%;    
+            height: 10vh;
+            resize: none;
+            border:3px solid $orange;
+            font-size: 1.2vw;
+            border-radius: 5px;
+        }
+        button{
+            @include button();
+            width: 20%; 
+            height: 5vh;
+            color:white;
+        }       
+        .contactButton{
+            transition:0.3s;
+        }
+        .contactButton:hover{
+            background-color: white;
+            color:$orange;
+            border:1px solid $orange;
+        }
+    }
+}
+
+.footer{
+    @include flex();
+    width: 100%;
+    height: 20vh;
+    margin-top: 10vh;
+    background-color: $orange;
+    color:white;
+    .contactInfo{
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:left ;
+        align-items: left;
+        width: 30%;
+        height: 15vh;
+    }
+    .social{
+        @include flex();
+        width: 30%;
+        height: inherit;
+        img{
+            width: 15%;
+            height: 8vh;
+            cursor: pointer;
+        }
+        .fb{
+            width: 20%;
+            height: 12vh;
+        }
+    }
+    .aboutText{
+        width: 30%;
+        height: 15vh;
+        word-break: break-all;
+        p{
+            width: 80%;
+        }
+    }
+}
+
+.activeSchedule{
+    background-color: blue;
+    color:green;
+}
+
+.testHeader{
+    transition: 1s;
+    @include flex();
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    color:black;
+    border-bottom: 3px solid $orange;
+    z-index: 10000000;
+    img{
+        width: auto;
+        height: 8vh;
+    }
+    .menu{
+        @include flex();
+        width:40%;
+        height: 8vh;
+        font-size:1.5vw;
+        p{cursor: pointer}
+    }
+}

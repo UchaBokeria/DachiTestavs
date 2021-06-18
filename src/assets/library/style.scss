@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@mixin flex() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin button{
+    border-radius: 30px;
+    background-color: $orange;
+    color: $black;
+    height: 7vh;
+    width: 15%;
+    font-size: 1.4vw;
+    cursor: pointer;
+    font-family:normal;
+}
+$orange:#ff6600ea;
+$black:#101820FF;

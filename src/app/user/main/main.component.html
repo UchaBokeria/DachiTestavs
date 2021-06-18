@@ -1,0 +1,228 @@
+<div [class]="header_class">
+    <img src="https://cdn3.iconfinder.com/data/icons/fitness-37/512/fitness_31-512.png" alt="">
+    <div class="menu">
+        <p>Home</p>
+        <p>Schedule</p>
+        <p>Pricing</p>
+        <p>Contanct</p>
+    </div>
+</div>
+
+<div class="home">
+    <div class="text">
+        <div class="butt">
+            <h1>Make it Lifestype, Not a duty</h1>
+            <button class="home_button">Watch our video</button>
+        </div>
+        <div class="triangle-left"></div>
+        <div class="triangle-right"></div>
+        <div class="emptyBox"></div>
+    </div>
+
+    <div class="boxes">
+        <h4>Our Classes</h4>
+        <div class="box">
+            <h1>Weight Training</h1>
+            <img src="https://www.mensjournal.com/wp-content/uploads/mf/1280-barbell-squat_1.jpg?quality=86&strip=all" alt="">
+            <p> Present manufacturing smile even now photography, 
+                Bureau and the Bureau itself. Donec placerat augue, 
+                and not a career. Nullam rhoncus for Pakistan, 
+                laoreet posuere cursus felis sollicitudin.
+            </p>
+        </div>
+
+        <div class="box">
+            <h1>Personal Training</h1>
+            <img src="https://i.ndtvimg.com/i/2016-06/pushups-625_625x350_51465978240.jpg" alt="">
+            <p> 
+                Pellentesque ipsum smile or a deductible libero. 
+                A large number of non venenatis Suspendisse aliquet. 
+                But at present or ceramic members, and that malesuada lorem. 
+                Not to the mass of Curabitur in lorem venenatis lobortis.
+            </p>
+        </div>
+
+        <div class="box">
+            <h1>Ladies Boxing</h1>
+            <img src="https://media.lifehack.org/wp-content/uploads/2018/04/workout-routines-for-women-740x416.jpg" alt="">
+            <p> 
+                Pellentesque ipsum smile or a deductible libero. 
+                A large number of non venenatis Suspendisse aliquet. 
+                But at present or ceramic members, and that malesuada lorem. 
+                Not to the mass of Curabitur in lorem venenatis lobortis.
+            </p>
+        </div>
+        
+        <!-- <div class="box">
+            <h1>Yoga</h1>
+            <p>
+                People Think that Yoga sucks but they have never tryed it.
+                This is tecnic how to feel yourself better and bla bla bla.
+                People Think that Yoga sucks but they have never tryed it.
+                This is tecnic how to feel yourself better and bla bla bla.
+            </p>
+            <button>More</button>    
+        </div>
+    
+        <div class="box">
+            <h1>Workout</h1>
+            <p>
+                People Think that Workout sucks but they have never tryed it.
+                This is tecnic how to feel yourself better and bla bla bla.
+                People Think that Yoga sucks but they have never tryed it.
+                This is tecnic how to feel yourself better and bla bla bla.
+            </p>
+            <button>More</button>    
+        </div> -->
+
+    </div>
+
+</div>
+
+<div class="schedule">
+    <h1>Schedule</h1>
+
+    <!-- <div class="days">
+        <p>Sunday</p>
+        <p>Monday</p>
+        <p>Tuesday</p>  
+        <p>Wednesday</p>
+        <p>Thursday</p>
+        <p>Friday</p>
+        <p>Saturday</p>
+    </div>
+
+    <div class="table" >
+        <div class="task" *ngFor="let item of tasks">
+            <img src="" alt="">
+            <h3>{{item.time}}</h3>
+            <p>{{item.name}}</p>
+        </div>
+    </div> -->
+    <div class="tableContainer">
+        <table>
+            <tr class="tableDays">
+                <th>
+                    <img src="assets/image/tmp.png" alt="">
+                </th>
+
+                <td>Sunday</td>
+                <td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wednesday</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+                <td>Saturday</td>
+            </tr>
+    
+            <tr *ngFor="let item of schdeule" class="tableTimes">
+                <th>{{item.time}}</th>
+                <td><i class="material-icons booked">&#xe615;</i></td>
+                <td><i class="material-icons free">&#xe614;</i></td>
+                <td><i class="material-icons free">&#xe614;</i></td>
+                <td><i class="material-icons booked">&#xe615;</i></td>
+                <td><i class="material-icons free">&#xe614;</i></td>
+                <td><i class="material-icons free">&#xe614;</i></td>
+                <td><i class="material-icons booked">&#xe615;</i></td>
+            </tr>
+          </table>
+    </div>
+
+</div>
+
+<div class="pricing">
+    <div class="text">
+        <h1>Price Plan</h1>
+    </div>
+
+    <div class="price-box">
+        <div class="price">
+            <p>Running</p>
+            <h1>79$/month</h1>
+            <h2>15 Cardio Classes</h2>
+            <h2>10 Swimming Lessons</h2>
+            <h2>15 Yoga Classes</h2>
+            <h2>20 Aerobics</h2>
+            <h2>5 Massages</h2>
+            <h2>15 Body building</h2>
+            <button class="price_button">See More!</button>
+        </div>
+    
+        <div class="price">
+            <p>Swimming</p>
+            <h1>99$/month</h1>
+            <h2>15 Cardio Classes</h2>
+            <h2>10 Swimming Lessons</h2>
+            <h2>15 Yoga Classes</h2>
+            <h2>20 Aerobics</h2>
+            <h2>5 Massages</h2>
+            <h2>15 Body building</h2>
+            <button class="price_button">See More!</button>
+        </div>
+    
+        <div class="price">
+            <p>Yoga</p>
+            <h1>129$ / month</h1>
+            <h2>15 Cardio Classes</h2>
+            <h2>10 Swimming Lessons</h2>
+            <h2>15 Yoga Classes</h2>
+            <h2>20 Aerobics</h2>
+            <h2>5 Massages</h2>
+            <h2>15 Body building</h2>
+            <button class="price_button">See More!</button>
+        </div>
+    
+        <div class="price">
+            <p>Push ups</p>
+            <h1>69$ / month</h1>
+            <h2>15 Cardio Classes</h2>
+            <h2>10 Swimming Lessons</h2>
+            <h2>15 Yoga Classes</h2>
+            <h2>20 Aerobics</h2>
+            <h2>5 Massages</h2>
+            <h2>15 Body building</h2>
+            <button class="price_button">See More!</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="contanct">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d2307972.4031482697!2d12.077184780991571!3d51.320914172264764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d52.545428199999996!2d13.467481399999999!4m5!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!3m2!1d52.520006599999995!2d13.404954!5e0!3m2!1sen!2sge!4v1623306714970!5m2!1sen!2sge" 
+        width="45%" 
+        height="440" 
+        style="border:3px solid #ff6600ea; border-radius: 10px;" 
+        allowfullscreen="" 
+        oading="lazy">
+    </iframe>
+
+    <div class="contactForm">
+        <h1>Contact Me</h1>
+        <div class="contanctUser">
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="text" name="" id="" placeholder="Surname">
+        </div>  
+        <input type="text" name="" id="" placeholder="Gmail">
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <button class="contactButton">Send</button>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="contactInfo">
+        <p>Address: Test Place N52</p>
+        <p>Num: 555 55 55 55</p>
+        <p>Gmail: Name.Surname@gmail.com</p>
+    </div>
+    <div class="social">
+        <img src="https://freepngimg.com/thumb/facebook/62588-and-icons-facebook-computer-black-logo-white.png" class="fb"alt="">
+        <img src="https://cdn4.iconfinder.com/data/icons/social-media-2231/512/62-instagram_social-512.png" alt="">
+        <img src="https://img.icons8.com/metro/452/twitter.png" alt="">
+    </div>
+    <div class="aboutText">
+        <p>about me text goes here idk or il just <br> remove it later if this shit is not good and worth</p>
+    </div>
+</div>
